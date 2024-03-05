@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>C0886416 - DP (Home)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .link-button {
+            background-color: #996dd2;
+            color: white;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition-duration: 0.4s;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+            display: block;
+        }
+
+        .link-button:hover {
+            background-color: #694894;
+        }
+
+        body {
+            color: #333;
+        }
+
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit], button {
+            width: 100%;
+            background-color: #996dd2;
+            color: white;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition-duration: 0.4s;
+        }
+
+        input[type=submit]:hover, button:hover {
+            background-color: #694894;
+        }
+        .container {
+            border: 1px solid #333;
+            border-radius: 15px;
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+        }
+        .main-container {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Home Page</h1>
+    <h2>C0886416 - DP</h2>
+    <hr>
+
+    <!-- Link to the Profile Page -->
+    <div class="main-container">
+        <div class="container">
+            <h2>Go to Profile Page</h2>
+            <form method="POST" action="/profile">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br><br>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+        
+                <input type="submit">
+            </form>
+        </div>
+
+        <div class="container">
+            <h2>Go to Name Page</h2>
+            <!-- Link to the Admin Page -->
+            <a class="link-button" href="/name">Name Page</a>
+        </div>
+
+        <div class="container">
+            <h2>Go to Admin Page</h2>
+            <!-- Link to the Admin Page -->
+            <a class="link-button" href="/admin">Admin Page</a>
+        </div>
+
+        <div class="container">
+            <h2>Go to User Page</h2>
+            <!-- User ID Input Field and Link -->
+            <a class="link-button" href="/user/100">Go to User 100</a>
+            <br>
+            <a class="link-button" href="/user/300">Go to User 300</a>
+            <br>
+            <a class="link-button" href="/user/500">Go to User 500</a>
+        </div>
+
+        <div class="container">
+            <h2>Go to Value of Day Page</h2>
+            <!-- Value of Day Link -->
+            <a class="link-button" href="/valueofday/1998-08-16">Get Value of the Day for August 16, 1998</a>
+            <br>
+            <a class="link-button" href="/valueofday/2023-10-01">Get Value of the Day for October 1, 2023</a>
+        </div>
+    </div>
+</body>
+</html>
